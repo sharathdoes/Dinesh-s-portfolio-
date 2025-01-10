@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy-black: #0a192f;
+  --light-slate: #a8b2d1;
+  --indigo: #64ffda; /* Changed from cyan to indigo */
+}
+
+body {
+  background-color: var(--navy-black);
+  color: var(--light-slate);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Shooting Stars Animation */
+.stars-container {
+  background: linear-gradient(45deg, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+  overflow: hidden;
+}
+
+.stars-container::before,
+.stars-container::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+              0 0 0 8px rgba(255,255,255,0.1),
+              0 0 20px rgba(255,255,255,1);
+  animation: shooting 3s infinite linear;
+}
+
+.stars-container::before {
+  top: -10%;
+  left: 50%;
+  animation-delay: .2s;
+}
+
+.stars-container::after {
+  top: -10%;
+  left: 80%;
+  animation-delay: 1.2s;
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(150vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Curved Header */
+.curved-header {
+  background: rgba(10, 25, 47, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 0 0 20px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Project Cards */
+.project-card {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px -15px rgba(100, 255, 218, 0.2);
+  border-color: var(--indigo); /* Changed from cyan to indigo */
+}
+
+.project-card img {
+  transition: all 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.carousel-slide.exit {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.carousel-arrow {
+  background: rgba(10, 25, 47, 0.8);
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  transition: all 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background: rgba(100, 255, 218, 0.1);
+  border-color: var(--indigo); /* Changed from cyan to indigo */
+}
+
+/* Skills */
+.skill-item {
+  position: relative;
+  padding-left: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.skill-item:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--indigo); /* Changed from cyan to indigo */
+}
+
+.skill-item:hover {
+  color: var(--indigo); /* Changed from cyan to indigo */
+  transform: translateX(10px);
+}
+
+/* Form Inputs */
+input, textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--indigo); /* Changed from cyan to indigo */
+  box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.2);
+}
+
+/* Resume Button */
+.resume-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.resume-button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.resume-button:hover:before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Section Transitions */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Achievements Cards */
+.achievements div {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.achievements div:hover {
+  background: rgba(100, 255, 218, 0.05);
+  border-color: var(--indigo); /* Changed from cyan to indigo */
+  transform: translateY(-5px);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Education Cards */
+#education .bg-white\/5 {
+  transition: all 0.4s ease;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+#education .bg-white\/5:hover {
+  background: rgba(100, 255, 218, 0.05);
+  border-color: var(--indigo); /* Changed from cyan to indigo */
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* Contact Section */
+#contact .bg-white\/5 {
+  transition: all 0.3s ease;
+}
+
+#contact .bg-white\/5:hover {
+  border-color: var(--indigo); /* Changed from cyan to indigo */
+  transform: translateY(-5px);
+}
+
+/* Social Icons */
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--indigo); /* Changed from cyan to indigo */
+  transform: translateY(-3px);
+}
