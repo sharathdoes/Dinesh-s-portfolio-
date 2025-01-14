@@ -196,6 +196,7 @@ function App() {
             </a>
           </div>
           <div>
+            <div>
             <a
               href="/resume.pdf"
               download="resume.pdf"
@@ -204,6 +205,8 @@ function App() {
               <Download className="w-4 h-4" />
               <span>Download Resume</span>
             </a>
+          </div>
+             
           </div>
         </div>
       </section>
@@ -353,25 +356,15 @@ function App() {
         </h2>
         <div className="max-w-6xl mx-auto px-6">
           <div className="bg-white/5 p-8 rounded-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">Contact Details</h3>
             <div className="space-y-4">
               <p className="flex items-center justify-center">
                 <Mail className="mr-2" /> dineshchandragaddam2002@gmail.com
               </p>
-              <p className="flex items-center justify-center">
-                <Phone className="mr-2" /> 703-906-4408
-              </p>
+       
               <p className="flex items-center justify-center">
                 <MapPin className="mr-2" /> Arlington, VA
               </p>
-              <div className="flex justify-center space-x-4">
-                <a href="#" className="hover:text-indigo-400 transition-colors">
-                  <Github />
-                </a>
-                <a href="#" className="hover:text-indigo-400 transition-colors">
-                  <Linkedin />
-                </a>
-              </div>
+             
             </div>
           </div>
         </div>
