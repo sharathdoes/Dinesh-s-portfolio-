@@ -23,7 +23,7 @@ function App() {
       role: "Data Science and Research Intern",
       duration: "June – August 2024",
       description: 
-  "Developed a model to classify household appliances by power consumption, optimizing energy usage and reducing costs by 15%. With prediction accuracy of 88%. The model uses a <a href='https://ieeexplore.ieee.org/document/8039522'>NILM Research Paper</a> as a reference and combines Rule based Statistics and Probability with Machine learning to scale the ETL workflow to over 50,000 households.",
+  "Developed a model to classify household appliances by power consumption, optimizing energy usage and reducing costs by 15%. With prediction accuracy of 88%. The model uses a NILM Research Paper as a reference and combines Rule based Statistics and Probability with Machine learning to scale the ETL workflow to over 50,000 households.",
 
     },
     {
