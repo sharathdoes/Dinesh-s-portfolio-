@@ -23,7 +23,7 @@ function App() {
       role: "Data Science and Research Intern",
       duration: "June – August 2024",
       description:
-        "Developed a model to classify household appliances by power consumption, optimizing energy usage and reducing costs by 15%. Enhanced data processing ETL workflows for 50,000+ households.",
+        "Developed a model to classify household appliances by power consumption, optimizing energy usage and reducing costs by 15%. With prediction accuracy of 88%", "The model uses a <a href='https://ieeexplore.ieee.org/document/8039522' target="_blank" rel="noopener noreferrer">NILM Research Paper</a> as a reference and combines Rule based Statistics and Probability with Machine learning to scale the ETL workflow to over 50,000 households. "
     },
     {
       company: "Letsgrowmore Company",
@@ -33,41 +33,88 @@ function App() {
         "Analysed global demographics data to identify patterns and causes, supporting policy development and securitystrategies.Used scikit-learn, KNN, Feature Engineering, Seaborn, Matplotlib, Pandas, NumPy, Random Forest, Decision Tree.",
     },
   ];
-
-  const projects = [
-    {
-      title: "Appliance Image Classification",
-      description:
-        "Created a CNN model to classify household appliances from images, using Google Colab for model building and AWS for deployment and testing purposes.",
-      image:
-        "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=60",
-      technologies: ["Python", "CNN", "AWS SageMaker", "TensorFlow"],
-    },
-    {
-      title: "World Population Demographics Analysis",
-      description:
-        "Analysed global population data and created visualizations offering insights into demographic trends.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=60",
-      technologies: ["Python", "Plotly", "Tableau", "Seaborn"],
-    },
-    {
-      title: "Restaurant Review System",
-      description:
-        "Developed a system for collecting and processing restaurant reviews and ratings using MongoDB.",
-      image:
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=60",
-      technologies: ["Python", "MongoDB", "NoSQL"],
-    },
-    {
-      title: "S&P 500 Analysis",
-      description:
-        "Analysed the impact of major events on S&P 500 using statistical analysis and regression models.",
-      image:
-        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=60",
-      technologies: ["R", "ETL", "Regression Models"],
-    },
-  ];
+const projects = [
+  {
+    title: "Personalized AI Chatbot Using RAG",
+    description:
+      "Designed and built an intelligent chatbot powered by Retrieval-Augmented Generation (RAG) that interacts with private data. Integrated NLP frameworks such as LangChain and OpenAI, utilized vector databases for efficient querying, and deployed the system to deliver context-aware, scalable conversational experiences.",
+    image:
+      "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=60",
+    technologies: ["LangChain", "OpenAI", "Vector Databases", "RAG", "NLP"],
+  },
+  {
+    title: "Weather Temperature Forecasting",
+    description:
+      "Forecasted temperature using the Jena Climate Dataset by applying Time Series models like ARMA, ARIMA, and SARIMA. Compared model performance and achieved around 92% accuracy for real-time predictive analysis using the Box-Jenkins methodology.",
+    image:
+      "https://images.unsplash.com/photo-1491972690050-ba117db4dc09?auto=format&fit=crop&w=800&q=60",
+    technologies: [
+      "ARIMA",
+      "SARIMA",
+      "Box-Jenkins",
+      "Time Series",
+      "Statistics",
+      "ETL",
+    ],
+  },
+  {
+    title: "Resume Builder App",
+    description:
+      "Developed an intelligent resume builder app using Agentic AI and LLMs that customizes resumes based on job descriptions. Employed regex and NLP for accurate text extraction, Streamlit for the user interface, and integrated GitHub for version control. Users receive completed resumes via email automatically.",
+    image:
+      "https://images.unsplash.com/photo-1581093588401-4fba2b7f2c1e?auto=format&fit=crop&w=800&q=60",
+    technologies: [
+      "LLM",
+      "Regex",
+      "Streamlit",
+      "Agentic AI",
+      "Together AI",
+      "Grok AI",
+      "MistralAI",
+      "GitHub",
+    ],
+  },
+  {
+    title: "Appliance Image Classification",
+    description:
+      "Created a Convolutional Neural Network (CNN) model to classify household appliances from images. Used Google Colab for model development and AWS SageMaker for deployment, enabling automated appliance identification to support efficient energy management.",
+    image:
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=60",
+    technologies: ["Python", "CNN", "AWS SageMaker", "TensorFlow", "Keras"],
+  },
+  {
+    title: "World Population Demographics Analysis",
+    description:
+      "Analyzed global population datasets to uncover trends and make predictions. Used EDA, hypothesis testing, and visualization tools to support data-driven insights and decision-making.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=60",
+    technologies: [
+      "Python",
+      "Plotly",
+      "Seaborn",
+      "Matplotlib",
+      "Tableau",
+      "EDA",
+      "ETL",
+    ],
+  },
+  {
+    title: "Restaurant Review System",
+    description:
+      "Built a review and rating system for restaurants using MongoDB. Processed and analyzed user-generated reviews to extract meaningful insights using NoSQL technologies.",
+    image:
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=60",
+    technologies: ["Python", "MongoDB", "NoSQL"],
+  },
+  {
+    title: "S&P 500 Analysis",
+    description:
+      "Performed statistical analysis on the S&P 500 index to evaluate the impact of significant global events. Applied regression models to understand financial market behavior.",
+    image:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=60",
+    technologies: ["R", "ETL", "Regression Models"],
+  },
+];
 
   const skills = [
     {
