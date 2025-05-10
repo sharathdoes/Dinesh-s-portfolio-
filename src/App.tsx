@@ -40,7 +40,7 @@ const projects = [
     description:
       "Designed and built an intelligent chatbot powered by Retrieval-Augmented Generation (RAG) that interacts with private data. Integrated NLP frameworks such as LangChain and OpenAI, utilized vector databases for efficient querying, and deployed the system to deliver context-aware, scalable conversational experiences.",
     image:
-      "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=60",
+      "https://www.cambridge.org/elt/blog/wp-content/uploads/2020/08/GettyImages-1221348467-e1597069527719.jpg",
     technologies: ["LangChain", "OpenAI", "Vector Databases", "RAG", "NLP"],
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     description:
       "Forecasted temperature using the Jena Climate Dataset by applying Time Series models like ARMA, ARIMA, and SARIMA. Compared model performance and achieved around 92% accuracy for real-time predictive analysis using the Box-Jenkins methodology.",
     image:
-      "https://images.unsplash.com/photo-1491972690050-ba117db4dc09?auto=format&fit=crop&w=800&q=60",
+      "https://eg5c9vcv2j9.exactdn.com/wp-content/uploads/2023/07/AdobeStock_440069937-scaled.jpeg?lossy=1&ssl=1",
     technologies: [
       "ARIMA",
       "SARIMA",
@@ -63,7 +63,7 @@ const projects = [
     description:
       "Developed an intelligent resume builder app using Agentic AI and LLMs that customizes resumes based on job descriptions. Employed regex and NLP for accurate text extraction, Streamlit for the user interface, and integrated GitHub for version control. Users receive completed resumes via email automatically.",
     image:
-      "https://images.unsplash.com/photo-1581093588401-4fba2b7f2c1e?auto=format&fit=crop&w=800&q=60",
+      "https://jobsearchandinterviewcoach.com/wp-content/uploads/2019/12/robot-reading-resume-edited.jpg",
     technologies: [
       "LLM",
       "Regex",
