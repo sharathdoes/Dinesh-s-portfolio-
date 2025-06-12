@@ -44,6 +44,12 @@ const projects = [
     technologies: ["LangChain", "OpenAI", "Vector Databases", "RAG", "NLP"],
   },
   {
+    title:"Job Alert Assistant",
+    description:"This Python-based job alert agent scrapes filtered LinkedIn job search URLs, detects new postings in real-time, and sends email alerts only for unseen jobs. It ensures no duplicates are emailed, even if LinkedIn adds tracking parameters to job URLs.",
+    image:"https://staticlearn.shine.com/l/m/images/blog/MAKING_THE_MOST_OUT_OF_JOB_ALERTS.webp",
+    technologies:["beautifulsoap", "pandas", "python", "pyyaml"]
+  }
+  {
     title: "Weather Temperature Forecasting",
     description:
       "Forecasted temperature using the Jena Climate Dataset by applying Time Series models like ARMA, ARIMA, and SARIMA. Compared model performance and achieved around 92% accuracy for real-time predictive analysis using the Box-Jenkins methodology.",
