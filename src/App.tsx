@@ -47,8 +47,8 @@ const projects = [
     title:"Job Alert Assistant",
     description:"This Python-based job alert agent scrapes filtered LinkedIn job search URLs, detects new postings in real-time, and sends email alerts only for unseen jobs. It ensures no duplicates are emailed, even if LinkedIn adds tracking parameters to job URLs.",
     image:"https://staticlearn.shine.com/l/m/images/blog/MAKING_THE_MOST_OUT_OF_JOB_ALERTS.webp",
-    technologies:["beautifulsoap", "pandas", "python", "pyyaml"]
-  }
+    technologies:["beautifulsoap", "pandas", "python", "pyyaml"],
+  },
   {
     title: "Weather Temperature Forecasting",
     description:
